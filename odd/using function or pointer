@@ -1,0 +1,25 @@
+#include <stdio.h>
+int OddEven(int *a);
+int main()
+{
+    int num,b,*a;
+    printf ("Enter a number");
+    scanf ("%d", &num);
+
+    b=OddEven(&num);
+    if (b==0)
+    {
+        printf ("Entered number is even");
+    }
+    else
+    {
+        printf ("Entered number is odd");
+    }
+    return 0;
+}
+int OddEven(int *a)
+{
+    int r,d;d=*a;
+    r=d%2;
+    return r;
+}
